@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurodamas - Ciberseguridad y ataques de IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">🧠 NEURODAMAS</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#amenazas">Amenazas</a></li>
+                <li><a href="#defensas">Defensas</a></li>
+                <li><a href="#futuro">Futuro</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <!-- Bombilla para modo oscuro -->
+            <button id="darkModeToggle" title="Modo oscuro" style="background:none;border:none;cursor:pointer;font-size:1.8rem;margin-left:1rem;">
+                <span id="bulb" style="transition: color 0.3s;">💡</span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Ciberseguridad y ataques de IA</h1>
+            <p>Explorando las nuevas fronteras de la seguridad digital en la era de la inteligencia artificial</p>
+            <div style="display: flex; justify-content: center; gap: 1rem;">
+                <a href="#amenazas" class="btn">Explorar Amenazas</a>
+                <a href="aliada.html" class="btn" style="background: linear-gradient(45deg, #00ffb3, #0077ff);">IA como aliada</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="section" id="amenazas">
+            <div class="container">
+                <h2 class="fade-in">Amenazas emergentes de IA</h2>
+                <div class="cards-grid">
+                    <div class="card fade-in card-expandable" id="deepfakes-card">
+                        <div class="card-icon">🎭</div>
+                        <h3>Deepfakes</h3>
+                        <p>Videos y audios sintéticos generados por IA que pueden impersonar a personas reales, creando contenido falso altamente convincente para desinformación y fraude.</p>
+                        <div class="card-more-info">
+                            <h4>¿Por qué son peligrosos?</h4>
+                            <ul>
+                                <li>Permiten suplantar identidades en videos y llamadas.</li>
+                                <li>Se usan para fraudes, extorsión y manipulación política.</li>
+                                <li>Dificultan la verificación de la autenticidad de la información.</li>
+                            </ul>
+                            <h4>¿Cómo detectarlos?</h4>
+                            <ul>
+                                <li>Herramientas de IA especializadas en análisis forense digital.</li>
+                                <li>Revisión de inconsistencias visuales y auditivas.</li>
+                                <li>Verificación de fuentes y contexto del contenido.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card fade-in card-expandable" id="ataques-card">
+                        <div class="card-icon">🤖</div>
+                        <h3>Ataques automatizados</h3>
+                        <p>Sistemas de IA que pueden ejecutar ataques cibernéticos de forma autónoma, adaptándose en tiempo real a las defensas y escalando a velocidades sin precedentes.</p>
+                        <div class="card-more-info">
+                            <h4>¿Por qué son peligrosos?</h4>
+                            <ul>
+                                <li>Permiten ataques masivos sin intervención humana.</li>
+                                <li>Se adaptan rápidamente a nuevas defensas.</li>
+                                <li>Pueden atacar múltiples objetivos simultáneamente.</li>
+                            </ul>
+                            <h4>¿Cómo protegerse?</h4>
+                            <ul>
+                                <li>Implementar sistemas de defensa automatizados.</li>
+                                <li>Monitoreo constante y análisis de tráfico.</li>
+                                <li>Actualización frecuente de reglas de seguridad.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card fade-in card-expandable" id="reconocimiento-card">
+                        <div class="card-icon">🔍</div>
+                        <h3>Reconocimiento avanzado</h3>
+                        <p>IA utilizada para mapear sistemas, identificar vulnerabilidades y realizar reconocimiento de forma más sofisticada que los métodos tradicionales.</p>
+                        <div class="card-more-info">
+                            <h4>¿Por qué es un riesgo?</h4>
+                            <ul>
+                                <li>Permite a los atacantes conocer la infraestructura objetivo.</li>
+                                <li>Identifica puntos débiles con mayor precisión.</li>
+                            </ul>
+                            <h4>¿Cómo protegerse?</h4>
+                            <ul>
+                                <li>Segmentación de red y control de acceso.</li>
+                                <li>Monitorizar escaneos y actividades sospechosas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card fade-in card-expandable" id="phishing-card">
+                        <div class="card-icon">📧</div>
+                        <h3>Phishing inteligente</h3>
+                        <p>Correos electrónicos maliciosos generados por IA que se adaptan al comportamiento del usuario, aumentando significativamente las tasas de éxito.</p>
+                        <div class="card-more-info">
+                            <h4>¿Por qué es efectivo?</h4>
+                            <ul>
+                                <li>Mensajes personalizados y convincentes.</li>
+                                <li>Dificulta la detección por filtros tradicionales.</li>
+                            </ul>
+                            <h4>¿Cómo protegerse?</h4>
+                            <ul>
+                                <li>Capacitación continua a usuarios.</li>
+                                <li>Uso de filtros avanzados con IA.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card fade-in card-expandable" id="ingenieria-card">
+                        <div class="card-icon">🧠</div>
+                        <h3>Ingeniería social IA</h3>
+                        <p>Sistemas que analizan perfiles digitales para crear estrategias de manipulación psicológica personalizadas y altamente efectivas.</p>
+                        <div class="card-more-info">
+                            <h4>¿Por qué es peligroso?</h4>
+                            <ul>
+                                <li>Manipulación altamente personalizada.</li>
+                                <li>Difícil de detectar y prevenir.</li>
+                            </ul>
+                            <h4>¿Cómo protegerse?</h4>
+                            <ul>
+                                <li>Privacidad en redes sociales.</li>
+                                <li>Concientización sobre ingeniería social.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card fade-in card-expandable" id="evasiones-card">
+                        <div class="card-icon">🛡️</div>
+                        <h3>Evasión de defensas</h3>
+                        <p>IA diseñada específicamente para evadir sistemas de detección tradicionales, adaptándose continuamente para mantenerse indetectable.</p>
+                        <div class="card-more-info">
+                            <h4>¿Por qué es difícil de detener?</h4>
+                            <ul>
+                                <li>Se adapta a nuevas reglas y firmas de detección.</li>
+                                <li>Utiliza técnicas avanzadas de ocultamiento.</li>
+                            </ul>
+                            <h4>¿Cómo protegerse?</h4>
+                            <ul>
+                                <li>Implementar detección basada en comportamiento.</li>
+                                <li>Actualizar y diversificar las defensas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section stats">
+            <div class="container">
+                <h2 class="fade-in">Impacto global</h2>
+                <div class="stats-grid">
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Incremento en ataques IA</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">$6T</div>
+                        <div class="stat-label">Costo global del cibercrime</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">43%</div>
+                        <div class="stat-label">Empresas atacadas</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">200ms</div>
+                        <div class="stat-label">Tiempo de respuesta IA</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="defensas">
+            <div class="container">
+                <h2 class="fade-in">Estrategias de defensa</h2>
+                <div class="timeline">
+                    <div class="timeline-item fade-in">
+                        <h3>Detección de anomalías</h3>
+                        <p>Sistemas de IA que monitorean el comportamiento normal de la red para identificar actividades sospechosas en tiempo real.</p>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <h3>Autenticación biométrica</h3>
+                        <p>Uso de características únicas del individuo para prevenir la suplantación de identidad mediante deepfakes.</p>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <h3>Threat hunting IA</h3>
+                        <p>Búsqueda proactiva de amenazas utilizando algoritmos de aprendizaje automático para identificar patrones ocultos.</p>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <h3>Respuesta automatizada</h3>
+                        <p>Sistemas que pueden responder instantáneamente a amenazas, aislando sistemas comprometidos automáticamente.</p>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <h3>Blockchain para integridad</h3>
+                        <p>Tecnología distribuida para verificar la autenticidad de datos y prevenir manipulaciones maliciosas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="futuro">
+            <div class="container">
+                <h2 class="fade-in">El futuro de la ciberseguridad</h2>
+                <div class="cards-grid">
+                    <div class="card fade-in">
+                        <div class="card-icon">🚀</div>
+                        <h3>IA vs IA</h3>
+                        <p>La próxima generación de ciberseguridad será una batalla entre sistemas de IA atacantes y defensores, cada uno evolucionando continuamente.</p>
+                    </div>
+                    <div class="card fade-in">
+                        <div class="card-icon">🌐</div>
+                        <h3>Seguridad cuántica</h3>
+                        <p>La computación cuántica revolucionará tanto los ataques como las defensas, requiriendo nuevos paradigmas de seguridad.</p>
+                    </div>
+                    <div class="card fade-in">
+                        <div class="card-icon">👥</div>
+                        <h3>Colaboración global</h3>
+                        <p>La necesidad de cooperación internacional para combatir amenazas de IA que trascienden fronteras nacionales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Neurodamas</h3>
+                    <p>Un equipo de estudiantes de Psicología de la Universidad Andina del Cusco. Nuestro nombre refleja nuestra pasión por el mundo de la mente, el cerebro y las emociones, combinando el conocimiento científico con una mirada humana y empática.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Integrantes</h3>
+                    <p>Luz Cinthia Celina Apaza Rojo</p>
+                    <p>Heidy Selene Bejar Almanza</p>
+                    <p>Pamela shany huaman Roca</p>
+                    <p>Katya Mabel Quispe Huaman</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Recursos</h3>
+                    <p><a href="https://github.com/Neurodamas/Pagina-Web.git">Link de github</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=9-F_XtcBy1U">Video referente</a></p>
+                    <p><a href="https://www.microsoft.com/es-es/security/business/security-101/what-is-ai-for-cybersecurity">Pagina referente</a></p>
+                </div>
+            </div>
+            <p>&copy; 2025 Neurodamas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.card-expandable').forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Cerrar otras tarjetas
+            document.querySelectorAll('.card-expandable.expanded').forEach(other => {
+                if (other !== card) other.classList.remove('expanded');
+            });
+            // Alternar expansión
+            card.classList.toggle('expanded');
+        });
+    });
+});
+    </script>
+</body>
+</html>
